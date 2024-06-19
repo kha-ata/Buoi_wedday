@@ -9,43 +9,42 @@ package model;
  * @author DELL
  */
 public abstract class Person {
-    protected String ten,tuoi,gioitinh;
+    protected String name,job;
+    protected int age;
 
-    public Person(String ten, String tuoi, String gioitinh) {
-        this.ten = ten;
-        this.tuoi = tuoi;
-        this.gioitinh = gioitinh;
+    public Person(String name, String job, int age) {
+        this.name = name;
+        this.job = job;
+        this.age = age;
     }
 
-    public String getTen() {
-        return ten;
+    public String getName() {
+        return name;
     }
 
-    public void setTen(String ten) {
-        this.ten = ten;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getTuoi() {
-        return tuoi;
+    public String getJob() {
+        return job;
     }
 
-    public void setTuoi(String tuoi) {
-        this.tuoi = tuoi;
+    public void setJob(String job) {
+        this.job = job;
     }
 
-    public String getGioitinh() {
-        return gioitinh;
+    public int getAge() {
+        return age;
     }
 
-    public void setGioitinh(String gioitinh) {
-        this.gioitinh = gioitinh;
+    public void setAge(int age) {
+        this.age = age;
     }
-
-   
-    public abstract void ngonNgu();
+    public abstract void level();
     @Override
     public String toString() {
-        return "Person{" + "ten=" + ten + ", tuoi=" + tuoi + ", gioitinh=" + gioitinh + '}';
+        return "Person{" + "name=" + name + ", job=" + job + ", age=" + age + '}';
     }
     
 }
